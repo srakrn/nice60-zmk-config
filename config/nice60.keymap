@@ -18,7 +18,7 @@
 		
 		default_layer {
 // ------------------------------------------------------------------------------------------
-// | ESC |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   BKSP   |
+// | `~  |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  |   BKSP   |
 // | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  |   "|"   |
 // | MO(1) |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |     ENTER    |
 // |  SHIFT  |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |      SHIFT       |
@@ -34,7 +34,7 @@
 		};
 
 		f_one_layer {
-// -----`--------------------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------------
 // | ESC | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F8  | F9  | F10  | F11 | F12 |  DELETE  |
 // | TAB   |     | UP  |     |     |     |     |     |     |     |     |     |     |         |
 // |        | LF  | DN  | RG  |     |     | LF  | DN  | UP  | RG  |     |     |              |
@@ -56,14 +56,14 @@
 // |         |     |  WinTV |      | HUEUP | SATUP | BRIUP | SPDUP |    |     |    |     |     |           |
 // |          | WinL | WinNo  | WinR | HUEDN | SATDN | BRIDN | SPDDN |    |     |   |     |   EFFECT FWD   |
 // |             |     |       |       |      |       |       |        |    |     |     |                  |
-// |          |      |      |                 TOG RGB                     |         |       | MO(3) |      |
+// |          |      |      |                 TOG RGB                     |         | MO(3) |       |      |
 // ---------------------------------------------------------------------------------------------------------
 			bindings = <
 	&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &trans           &trans           &trans           &trans   &trans   &trans   &trans   &trans   &rgb_ug RGB_EFR
 	&trans       &trans        &kp LG(TAB)   &trans        &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI  &trans   &trans   &trans   &trans   &trans           &trans
 	&trans   &kp LC(LG(LEFT))   &kp LG(A)  &kp LC(LG(RIGHT)) &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD  &trans   &trans   &trans   &trans          &rgb_ug RGB_EFF
 	&trans         &trans        &trans       &trans         &trans           &trans           &trans           &trans           &trans   &trans   &trans                           &trans
-	&trans        &trans        &trans                                    &rgb_ug RGB_TOG                                                  &mo 3   &trans  &trans                   &trans
+	&trans        &trans        &trans                                    &rgb_ug RGB_TOG                                                  &trans  &mo 3       &trans               &trans
 			>;
 		};
 	};
